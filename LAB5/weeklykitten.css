@@ -1,0 +1,91 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.formcontainer {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.textfield {
+  margin-bottom: 20px;
+}
+
+.textfield label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.textfield input{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.checkbox input{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.checkbox label {
+  display: inline;
+}
+
+#submit, #reset{
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 8px 16px; 
+  display: inline-block; /* Display buttons side by side */
+  margin-right: 10px; 
+}
+
+#submit {
+  background-color: #007bff; 
+  color: #fff;
+}
+
+#reset {
+  background-color: #dc3545; 
+  color: #fff;
+}
+
+/* Error handling styles */
+
+.error {
+  border: 1px solid #ff0000;
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 3px #ff0000; /* Add a red box-shadow to indicate the error input */
+}
+
+.error-message {
+  margin-top: 5px;
+  color: #ff0000;
+  font-size: 14px;
+}
+
+/* Highlight the checkboxes with errors */
+.checkbox.error label {
+  color: #ff0000;
+}

@@ -1,0 +1,76 @@
+/* Ting Wang external CSS stylesheet*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    background-color: #f1f1f1;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    max-width: 800px;
+    margin: 40px auto;
+    
+}  
+.box { 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 20px; 
+    min-width: 200px;
+    flex-basis: 0; /*the flex items grow and shrink equally to fill the available space.*/
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+.box.red {
+    background-color: red;
+
+}
+  
+.box.blue {
+    background-color: blue;
+
+}
+  
+.box.green {
+    background-color: green;
+
+}
+  
+.box.yellow {
+    background-color: yellow;
+
+}
+  
+.box.orange {
+    background-color: orange;
+}
+footer p {
+    margin: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Change the flex direction to vertical for smaller screens */
+    }
+  
+    .box {
+      flex: 1 0 auto; /* Adjust flex properties to allow boxes to resize freely */
+      margin: 20px; /* Adjust margin to create spacing between boxes */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

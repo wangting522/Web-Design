@@ -1,0 +1,135 @@
+<!-- Name:Ting Wang File Name: hometown Date:5/26/2023 Description: lab2-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="Displays information about customer">
+     <meta name="keywords" content="information">
+     <meta name="author" content="Ting Wang">
+     
+     <title>customer</title>  
+  </head>
+
+<body>
+    <a id="top"></a>
+    <h2>Customer Registration</h2>
+
+    <form action="Lab2Form.php" method="post" enctype="text/plain">
+        
+    <fieldset>
+
+        <legend>1.User Info</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" size="20" required readonly>
+                </td>
+                <td>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" maxlength ="10" size="20" required >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" size="50" placeholder="format for email is XXX@YYY.ZZZ">  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="at least 8 characters" size="20">
+                </td>
+                <td>
+                    <label for="repeat">Password Repeat</label><br>
+                    <input type="password" id="repeat" name="repeat" placeholder="at least 8 characters" size="20"> 
+                </td>
+            </tr>
+          
+        </table>
+    </fieldset>
+
+    <fieldset>
+
+        <legend>2.Location</legend>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city" size="20" >
+                </td>
+                <td>
+                    <label for="state">State</label><br>
+                    <input type="text" id="state" name="state" size="2">
+                </td>
+                <td>
+                    <label for="zip">Zip</label><br>
+                    <input type="text" id="zip" name="zip" size="6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="phone" placeholder="NNN-NNN-NNNN"> 
+                </td>
+                <td colspan="2">
+                    <label for="country">Country</label><br>
+                    <select id="country" name="country" multiple size="1" >
+                        <option value="canada" selected>Canada</option>
+                        <option value="china">China</option>
+                        <option value="france">France</option>
+                        <option value="australia">Australia</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label for="continent">Continent</label><br>
+                    <input type="radio" id="cc1" name="continent" value="northamerica">
+                    <label for="cc1">North America</label><br>                    
+                    <input type="radio" id="cc2" name="continent" value="europe">
+                    <label for="cc2">Europe</label><br>
+                    <input type="radio" id="cc3" name="continent" value="southamerica">
+                    <label for="cc3">South America</label><br> 
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>3.Personal Details</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="birthday">Birth Day</label><br>
+                    <input type="date" id="birthday" name="birthday">
+                </td>
+                <td>
+                    <label for="color">Favorite Color</label><br>
+                    <input type="color" id="color" name="color" value="#000000">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    
+    <h3>4. All Done</h3><br>
+    <input type="checkbox" id="agreement" name="agreement">I agree to the <a href="http://127.0.0.1:5500/customer.html" target=_blank>Terms of the Site</a><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear information">
+    
+    </form>
+    
+    <footer>
+        <p>Ting Wang, 5/20/2023, Copyright &copy;2023 Ting Wang. All rights reserved</p>
+    </footer>
+    <a href="#top">Back to top</a>
+</body>
+</html>

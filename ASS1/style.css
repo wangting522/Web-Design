@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #ddd;
+    color: #1d1d1d; 
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.JPG);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    padding-left: 10px;
+    display:flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.navbar a{
+    display: flex;
+    list-style: none;
+    margin: 10px 20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+} 
+.header-text{
+    margin-top:30%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin: 20px;
+}
+.header-text h1 span{
+    color:#ff004f;
+}
+.header-text p{
+    font-size: 20px ;
+}
+footer{
+    margin-bottom: 10px;
+    background-color: transparent;
+} 
+/*----------resume-----------------*/
+.column{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
+.tab-title{
+    font-size: 60px;
+    font-weight: 600;
+    display:flex;
+    margin:20px 0 40px;
+} 
+.tab-links{
+    margin-right: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; 
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+} 
+/*----------course-----------------*/
+.box{
+    margin: 20px;
+    padding: 20px;
+}
+.container-fluid{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+.container .search{
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .search input{
+    width: 60%;
+    padding: 5px 16px;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+.course img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+h2{
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+p{
+    font-size: 10px;
+    text-align:justify;
+    display: block;
+}
+@media (max-width: 768px) {
+    /* Adjustments for screens smaller than 768px */
+    #header {
+      height: auto;
+    }
+    
+    .header-text {
+      margin-top: 10%;
+      margin-left: 3%;
+    }
+    
+    .header-text h1 {
+      font-size: 30px;
+    }
+    
+    .header-text p {
+      font-size: 14px;
+    }
+    
+    .column {
+      flex-basis: 100%;
+    }
+    
+    .tab-links {
+      margin-right: 0;
+    }
+    
+    .container .search input {
+      width: 100%;
+    }
+    
+    .course-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .course img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    h2 {
+      font-size: 16px;
+    }
+    
+    h3 {
+      font-size: 12px;
+    }
+    
+    p {
+      font-size: 10px;
+    }
+  }
+  

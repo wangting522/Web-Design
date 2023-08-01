@@ -1,0 +1,107 @@
+<!-- Name:Ting Wang File Name:Course. Including links to go back to homepage and go to resumepage. Date:6/6/2023 Description: Assignment1-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Ting Wang">
+      <title>Courses</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="app.js" defer></script>
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul  class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="course.html">Courses</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container-fluid">
+        <div class="container">
+            <div class="search">
+              <input type="text" name="search-course" id="search-course" size="30" placeholder="Search Course" onkeyup="search()">
+              
+              <label for="filter">Filter By</label>
+              <select name="filter" id="filter" onchange="filterCourses()">
+                <option value="default">Default</option>
+                <option value="level1">Level 1</option>
+                <option value="level2">Level 2</option>
+              </select>
+
+              <label for="sort">Sort By</label>
+              <select name="sort" id="sort" onchange="sortCourses()">
+                <option value="default">Default</option>
+                <option value="lowtohigh">Lowest to Highest</option>
+                <option value="hightolow">Highest to Lowest</option>
+              </select>
+            </div>
+            <div class="course-list" id="course-list">
+      
+                 <div class="course">
+                   <img src="images/1.png" alt="computer essential">
+                      <h2>CST 8101<br> Computer Essential</h2>
+                      <h3>Level 1</h3>
+                      <p>The essentials of computer software, hardware, and laptop management form the foundation for building further technical programming skills.</p>
+                  </div>
+      
+                  <div class="course">
+                    <img src="images/2.png" alt="Introduction to Computer Programming">
+                       <h2>CST 8116 <br>Introduction to Computer Programming</h2>
+                       <h3>Level 1</h3>
+                       <p>Students develop introductory knowledge of computer programming with emphasis on problem analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java programming language used as a means to implement problem solution designs.</p>
+                   </div>
+      
+                   <div class="course">
+                    <img src="images/3.jpg" alt="Introduction to Database">
+
+                       <h2>CST 8215 <br>Introduction to Database</h2>
+                       <h3>Level 1</h3>
+                       <p>Students learn the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify and query a database.</p>
+                   </div>
+      
+                   <div class="course">
+                    <img src="images/4.jpg" alt="Achieving Success in Changing Environments">
+
+                       <h2>CST 8300 <br>Achieving Success in Changing Environments</h2>
+                       <h3>Level 1</h3>
+                       <p>Students explore the possibilities ahead, assess their own aptitudes and strengths, and apply critical thinking and decision-making tools to help resolve some of the important issues in our complex society with its competing interests.</p>
+                   </div>
+      
+                   <div class="course">
+                    <img src="images/5.jpg" alt="Database Systems">
+                       <h2>CST 2355 <br>Database Systems</h2>
+                       <h3>Level 2 </h3>
+                       <p>Students obtain hands-on experience with advanced engineering modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks.</p>
+                    </div>
+      
+                   <div class="course">
+                    <img src="images/6.png" alt="Operating System Fundamentals (GNU/Linux)">
+                       <h2>CST 8102<br> Operating System Fundamentals (GNU/Linux)</h2>
+                       <h3>Level 2 </h3>
+                       <p>Students explore the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components.</p>
+                    </div>
+      
+                   <div class="course">
+                    <img src="images/7.png" alt="Object Oriented Programming (Java)">
+                       <h2>CST 8284 <br>Object Oriented Programming (Java)</h2>
+                       <h3>Level 2 </h3>
+                       <p>Students explore object-oriented programming methodology using the Java programming language. </p>
+                    </div>
+      
+                   <div class="course">
+                    <img src="images/8.jpg" alt="Web Programming">
+                       <h2>CST 8285 <br>Web Programing</h2>
+                       <h3>Level 2 </h3>
+                       <p>Students develop basic skills of web programming, website design and implementation. </p>
+                   </div>
+            </div>
+        </div>  
+      </div>
+        <footer>
+          <p>Copyright &copy;2023 Ting Wang. All rights reserved</p>
+        </footer>
+    </body>
+</html>
